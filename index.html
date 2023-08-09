@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="content">
+    <h1>Reading Comprehension Practices</h1>
+    <p>Here you will find a total of 6 reading comprehension practice tests.</p>
+  </div>
+
+  <div class="img-container">
+    <img src="images/readingpic.jpg" alt="Description of the image">
+  </div>
+  
+  <div class="center-box">
+    <h4>General Tips for Reading Comprehension</h4>
+    <p>Here is the tips box. You will see information on this.</p>
+  </div>
+
+  <div class="nav-bar">
+    <div class="nav-item" onclick="changeTab(0)">Test 1</div>
+    <div class="nav-item" onclick="changeTab(1)">Test 2</div>
+    <div class="nav-item" onclick="changeTab(2)">Test 3</div>
+    <div class="nav-item" onclick="changeTab(3)">Test 4</div>
+    <div class="nav-item" onclick="changeTab(4)">Test 5</div>
+    <div class="nav-item" onclick="changeTab(5)">Test 6</div>
+  </div>
+
+  <div class="tab" id="tab0">
+    <h2>Une voix pour les accents</h2>
+    <div class="content">
+      <p>
+        À la radio, le journaliste Jean-Michel Aphatie a conservé les intonations de son Pays basque natal dans le 
+        Sud de la France. Une exception, dans un paysage audiovisuel où il y a beaucoup de règles. 
+        <br><br>
+        Peut-on évoquer des sujets sérieux avec un accent du Sud de la France ? Faire de la philosophie avec des 
+        intonations alsaciennes ? Développer une pensée profonde en parlant comme les gens du Nord ?
+        <br><br>
+        Longtemps, la France a répondu non. Le seul « beau parler » était celui des élites parisiennes et ceux qui 
+        rêvaient de s’élever socialement devaient l’adopter.
+        <br><br>
+        Jean-Michel Aphatie est une exception. Avant lui, les journalistes qui avaient gardé l’accent du Midi présentaient le rugby, la météo ou les spécialités régionales, au nom d’une loi très stricte : « On n’accepte 
+        pas à la Comédie-Française que les comédiens parlent avec un accent régional », disait, voilà dix ans, 
+        le président de France Télévision Xavier Gouyou-Beauchamps. « Il est difficile d’imaginer un accent trop
+        fort pour présenter un journal national. »
+        <br><br>
+        M. Aphatie a été le premier à animer une émission dite « sérieuse » à la radio puis à la télévision. L’entrée 
+        du journaliste basque dans le monde audiovisuel n’avait donc rien d’évident.
+        <br><br>
+        « J’ai longtemps travaillé en presse écrite », indique-t-il. « C’est en représentant mon journal, Le Parisien, 
+        à l’émission Res Publica, à la radio, que j’ai rencontré Jean-Luc Hess, qui dirigeait alors la station. En 
+        1999, il m’a proposé de devenir chef du service politique. »
+        <br><br>
+        Curieusement, l’actuel président du groupe Radio-France ne se souvient pas du débat après l’arrivée de M. 
+        Aphatie : « Son arrivée n’a pas été critiquée, car il était évident que Jean-Michel Aphatie avait beaucoup 
+        de présence à la radio. Son accent est si naturel que cela n’a posé aucun problème. » 
+        <br><br>
+        Son passage à Radio Luxembourg, en 2003, a été bien moins facile. Noël Couedel, alors directeur de 
+        l’information, raconte : « Dans l’équipe de direction, j’étais le seul à défendre sa candidature. Personne 
+        ne discutait ses grandes qualités professionnelles. » Mais d’autres n’étaient pas d’accord : « Son accent 
+        est tellement fort que l’auditeur va oublier ce qu’il dit », « La politique est un sujet trop sérieux pour être 
+        confié à une intonation aussi chantante », etc.
+        <br><br>
+        À la fin, Philippe Labro, alors vice-président de la station de radio, a expliqué : « Il y a deux possibilités : 
+        soit son accent lui permettra d’être connu et ce sera très bien. Soit on le trouvera ridicule et ce sera une 
+        catastrophe. Selon moi, le risque est trop grand pour qu’on le prenne. »
+        <br><br>
+        « J’ai vraiment dû beaucoup insister pour être choisi ! », rapporte Jean-Michel Aphatie. Puis il précise : 
+        « Je n’ai jamais cherché à corriger ou à accentuer mon accent. Je mets tous mes efforts et toute mon énergie exclusivement dans le travail. »
+      </p>
+    </div>
+    
+    <hr>
+    <div id="score">
+      <h2>Score: 0/9</h2>
+    </div>
+    <hr>
+
+    <form id="quiz">
+      <div class="question" data-answer="2">
+        <p><strong>1. L’auteur de l’article...</strong></p>
+        <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>critique la façon de parler de certains journalistes.</div>
+        <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>recommande que les journalistes parlent sans accent.</div>
+        <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>constate que certains journalistes parlent avec un accent.</div>
+
+        <div class="answer"><strong>Correct Answer: </strong>C. Constate que certains journalistes parlent avec un accent.</div>
+      </div>
+
+      <div class="question" data-answer="2">
+        <p><strong>2. Autrefois, prononcer le français comme un Parisien était un avantage car c’était plus facile pour...</strong></p>
+        <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>devenir professeur.</div>
+        <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>se faire comprendre.</div>
+        <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>réussir dans la société.</div>
+
+        <div class="answer"><strong>Correct Answer: </strong>C. Réussir dans la société.</div>
+      </div>
+
+      <div class="question" data-answer="1">
+        <p><strong>3. Autrefois, les journalistes de radio qui parlaient avec un accent régional...</strong></p>
+        <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>étaient surtout spécialisés en politique.</div>
+        <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>commentaient en général des sujets peu sérieux.</div>
+        <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>devaient prendre des cours de prononciation.</div>
+
+        <div class="answer"><strong>Correct Answer: </strong>B. Commentaient en général des sujets peu sérieux.</div>
+      </div>
+
+      <div class="question" data-answer="0">
+        <p><strong>4. Vrai ou Faux: J.M. Aphatie a écrit des articles pour le journal Le Parisien.</strong></p>
+        <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Vrai</div>
+        <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Faux</div>
+
+        <div class="answer"><strong>Correct Answer: </strong>A. Vrai. Justification:  « J’ai longtemps travaillé en presse écrite... C’est en représentant mon journal Le Parisien. »</div>
+      </div>
+
+      <div class="question" data-answer="0">
+        <p><strong>5. Vrai ou Faux: Il a été facile, pour J.M. Aphatie, d’entrer à Radio-France.</strong></p>
+        <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Vrai</div>
+        <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Faux</div>
+
+        <div class="answer"><strong>Correct Answer: </strong>A. Vrai. Justification:  « L’actuel président du groupe Radio-France ne se souvient pas du débat autour de l’arrivée de M. Aphatie. Elle n’a pas été critiquée. »</div>
+      </div>
+
+      <div class="question" data-answer="2">
+        <p><strong>6. À Radio Luxembourg, le directeur de l’information trouvait que l’accent de J.M. Aphatie était... </strong></p>
+        <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>trop fort.</div>
+        <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>amusant.</div>
+        <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>acceptable.</div>
+
+        <div class="answer"><strong>Correct Answer: </strong>C. Acceptable.</div>
+      </div>
+
+      <div class="question" data-answer="1">
+        <p><strong>7. Vrai ou Faux: J.M. Aphatie a cherché à modifier sa manière de parler. </strong></p>
+        <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Vrai</div>
+        <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Faux</div>
+
+        <div class="answer"><strong>Correct Answer: </strong>B. Faux. Justification:  « Je n’ai jamais cherché à corriger ou à accentuer mon accent. »</div>
+      </div>
+
+      <div class="question" data-answer="1">
+        <p><strong>8. Vrai ou Faux: M. Labro considère que la manière de prononcer le français n’a aucune importance pour un journaliste de radio.</strong></p>
+        <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Vrai</div>
+        <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Faux</div>
+
+        <div class="answer"><strong>Correct Answer: </strong>B. Faux. Justification:  « Le risque est trop grand pour qu’on le prenne. »</div>
+      </div>
+
+      <div class="question" data-answer="2">
+        <p><strong>9. La principale qualité professionnelle de Jean-Michel Aphatie est : </strong></p>
+        <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>son talent pour écrire.</div>
+        <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>sa connaissance du sport.</div>
+        <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>sa grande capacité de travail.</div>
+
+        <div class="answer"><strong>Correct Answer: </strong>C. Acceptable.</div>
+      </div>
+
+      <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+
+    </form>
+  </div>
+
+  <div class="tab" id="tab1">Test 2 Content</div>
+
+
+  
+  <div class="tab" id="tab2">Test 3 Content</div>
+  <div class="tab" id="tab3">Test 4 Content</div>
+  <div class="tab" id="tab4">Test 5 Content</div>
+  <div class="tab" id="tab5">Test 6 Content</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
